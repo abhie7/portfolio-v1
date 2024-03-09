@@ -1,0 +1,33 @@
+@font-face {
+    font-family: __overusedgrotesk_e4adf4;
+    src: url(/_next/static/media/1656e9bdc2587d30-s.p.woff2) format("woff2");
+    font-display: block
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica";
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container{
+    margin: 0 auto;
+    display: flex;
+    width: 100%;
+    min-height: 33vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.noise{
+    background: rgb(255, 235, 184);
+    background-image: url(../assets/img/noise.svg);
+}
+

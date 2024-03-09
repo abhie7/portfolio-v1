@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Nohemi-VF"; */
+}
+
+html,
+body {
+  font-family: "Nohemi-Regular";
+  height: 100%;
+  width: 100%;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 4em;
+  display: flex;
+  align-items: center;
+  z-index: 2;
+}
+
+nav p, footer p{
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+nav > div {
+  flex: 1;
+}
+
+menu-btn p {
+  width: max-content;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 80px;
+  backdrop-filter: blur(40px);
+  padding: 0.75rem 1.5rem;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+}
+
+.local-time {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logo a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 4em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 2;
+}
+
+.items {
+  position: fixed;
+  width: 60%;
+  height: 100vh;
+  padding: 0 4em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+}
+
+.item {
+  width: max-content;
+  padding: 0.5em 0;
+  cursor: pointer;
+}
+
+.item p {
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: 'Nohemi-Light';
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 80px;
+  backdrop-filter: blur(40px);
+  transition: 0.6s;
+}
+
+.item a {
+  text-decoration: none;
+}
+
+.item:hover p {
+  background: none;
+  border: 2px solid rgba(255,255,255,0.5);
+}
+
+.preview {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  color: #fff;
+}
+
+.preview-bg {
+  position: absolute;
+  opacity: 0.35;
+  width: 100%;
+  height: 100%;
+}
+
+.preview-title h1 {
+  font-family: 'Nohemi-Light';
+  font-size: 7.5rem;
+}
+
+.preview-tags p, .preview-description p {
+  font-size: 1.5rem;
+  line-height: 120%;
+}
+
+/* variant 1 styles */
+.preview.variant-1 .preview-img {
+  position: absolute;
+  bottom: 10%;
+  right: 0%;
+  margin: 4em;
+  width: 300px;
+  height: 400px;
+  clip-path: polygon(0% 100%, 100%, 100%, 100% 100%, 0% 100%);
+}
+
+.preview.variant-1 .preview-title {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+}
+
+.preview.variant-1 .preview-tags {
+  position: absolute;
+  bottom: 50%;
+  right: 80%;
+}
+
+.preview.variant-1 .preview-description {
+  width: 500px;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+}
+
+/* variant 2 styles */
+.preview.variant-2 .preview-img {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  margin: 4em;
+  width: 300px;
+  height: 400px;
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.preview.variant-2 .preview-title {
+  position: absolute;
+  bottom: 50%;
+  left: 20%;
+}
+
+.preview.variant-2 .preview-tags {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+}
+
+.preview.variant-2 .preview-description {
+  width: 500px;
+  position: absolute;
+  bottom: 15%;
+  right: 10%;
+}
+
+/* variant 3 styles */
+.preview.variant-3 .preview-img {
+  position: absolute;
+  bottom: 10%;
+  left: 15%;
+  margin: 4em;
+  width: 300px;
+  height: 400px;
+  clip-path: polygon(0% 0%, 0% 0%, 0% 100%, 0% 100%);
+}
+
+.preview.variant-3 .preview-title {
+  position: absolute;
+  bottom: 40%;
+  right: 15%;
+}
+
+.preview.variant-3 .preview-tags {
+  position: absolute;
+  bottom: 20%;
+  right: 30%;
+}
+
+.preview.variant-3 .preview-description {
+  width: 500px;
+  position: absolute;
+  left: 20%;
+  top: 15%;
+}
